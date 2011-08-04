@@ -1,4 +1,30 @@
-     
+                           
+                           语言的数据类型
+   
+    C语言有五种基本数据类型：字符、整型、单精度实型、双精度实型和空类型
+    C语言还提供了几种聚合类型（aggregate types），包括数组、指针、结构、共用体（联合）、位域和枚举。
+    除v o i d类型外，基本类型的前面可以有各种修饰符。修饰符用来改变基本类型的意义，以便更准确地适应各种情况的需求。修饰符如下：
+   • signed（有符号）。
+   • unsigned（无符号）。
+   • long（长型符）。
+   • short（短型符）。修饰符s i g n e d、s h o r t、l o n g和u n s i g n e d适用于字符和整数两种基本类型，而l o n g还可用于d o u b l e
+（注意，由于long float与d o u b l e意思相同，所以A N S I标准删除了多余的long float）。
+    因为整数的缺省定义是有符号数，所以s i n g e d这一用法是多余的，但仍允许使用。某些实现允许将u n s i g n e d用于浮点型，
+如unsigned double。但这一用法降低了程序的可移植性，故建议一般不要采用。为了使用方便，C编译程序允许使用整型的简写形式：
+
+• short int 简写为s h o r t。
+• long int 简写为l o n g。
+• unsigned short int 简写为unsigned short。
+• unsigned int 简写为u n s i g n e d。
+• unsigned long int 简写为unsigned long。
+即，i n t可缺省。
+
+   八进制数（0～7）之间，起始0是必须的引导符。十六进制数（从0～9的数字，并从“a”～“ “f”的字母）。引导符0是必须有的，X即字母可用大写或小写。
+   
+
+
+
+
                              递归调用
 
      语言函数可以自我调用。如果函数内部一个语句调用了函数自己，则称这个函数是
